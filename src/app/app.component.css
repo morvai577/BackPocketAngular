@@ -1,0 +1,256 @@
+/* GLOBAL */
+#wrapper {
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    padding-right: 0;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+.navbar-default{
+  background-color: #0D47A1;
+  border-color: #0D47A1;
+  margin-bottom: 0;
+}
+
+.appName {
+  color: white;
+  font-size: 18px;
+  display: inline;
+  position: absolute;
+  margin-left: 80px;
+  bottom: 3px;
+}
+
+#sidebar-wrapper {
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    background: #f2f2f2;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: all 0.5s ease;
+    width: 0;
+    z-index: 1000;
+}
+
+#sidebar-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebar-nav {
+  list-style: none;
+  margin: 0;
+  position: absolute;
+  width: 300px;
+  padding-top: 60px;
+  padding-left: 0;
+
+}
+
+.sidebar-nav li {
+  line-height: 55px;
+}
+
+.sidebar-nav li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+
+.hamburger {
+    background: transparent;
+    border: none;
+    display: block;
+    height: 32px;
+    margin-left: 15px;
+    position: fixed;
+    top: 10px;
+    width: 32px;
+    left: 0;
+    z-index: 999;
+}
+
+.hamburger:hover,
+.hamburger:focus,
+.hamburger:active {
+    outline: none;
+}
+
+.hamburger.open-nav:before {
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transition: all 0.35s ease-in-out;
+    color: #ffffff;
+    content: '';
+    display: block;
+    font-size: 14px;
+    line-height: 32px;
+    opacity: 0;
+    text-align: center;
+    width: 100px;
+}
+
+.hamburger.open-nav .hamb-top {
+    -webkit-transition: all 0.35s ease-in-out;
+    background-color: rgba(255, 255, 255, 1);
+    top: 5px;
+}
+
+.hamburger.open-nav .hamb-middle {
+    background-color: rgba(255, 255, 255, 1);
+    margin-top: -2px;
+    top: 50%;
+}
+
+.hamburger.open-nav .hamb-bottom {
+    -webkit-transition: all 0.35s ease-in-out;
+    background-color: rgba(255, 255, 255, 1);
+    bottom: 5px;
+}
+
+.hamburger.open-nav .hamb-top,
+.hamburger.open-nav .hamb-middle,
+.hamburger.open-nav .hamb-bottom {
+    height: 4px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+/* FOR left side */
+.navbar-fixed-top {
+    right: auto;
+}
+
+.goals-background {
+  background-color: #b4cff9;
+}
+
+.start-button {
+  margin-top: 12%;
+  font-size: 280px;
+  color: #008900;
+  text-shadow: 3px 2px 8px grey
+}
+
+.instruction {
+  font-size: 20px;
+  margin-top: 0;
+  font-weight: 100;
+}
+
+.goal-box {
+  margin-top: 22px;
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 90%;
+}
+
+.goals-table {
+  font-size: 20px;
+}
+
+.goals-table th, td {
+  font-weight: lighter;
+  padding-right: 40px;
+}
+
+.speedingHeading {
+  font-size: 24px;
+}
+
+.speedingFace {
+  color: yellow;
+  font-size: 50px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.speedingFire {
+  color: yellow;
+  font-size: 50px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.smoothnessFace {
+  font-size: 50px;
+  color: yellow;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.smoothnessFire {
+  font-size: 50px;
+  color: yellow;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+/* -- STATS PAGE */
+.stats-box {
+  width: 100%;
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.stats-table {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.stats-table tr {
+  height: 40px;
+}
+
+.stats-form {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+#stats-message {
+  color: rgba(0,0,0,0.5);
+}
+
+/* -- JOURNEY HISTORY PAGE */
+#main-message {
+  margin-top: 50%;
+  color: rgba(0,0,0,0.5);
+}
+
+/* -- MESSAGES PAGE */
+
+.messages-box {
+  margin-top: 22px;
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 90%;
+}
+
+.message-paragraph {
+  margin-top: 16px;
+}
